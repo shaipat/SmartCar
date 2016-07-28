@@ -2,7 +2,7 @@
 A remote controlled robot vehicle project, using a mbed LPC1678 microcontroller, and Bluetooth communication.  
 The system was created using the ARM mbed Enviroment, using C/C++, and the official RTOS library.
 
-![Robot](screenshots/1Robot.jpg "The Robot")  
+![Robot](screenshots/1Robot.jpg)  
 
 ## Features
 * Remote controlled by any Android Smartphone using Bluetooth.  
@@ -12,8 +12,8 @@ The system was created using the ARM mbed Enviroment, using C/C++, and the offic
 * User friendly application interface.  
 
 ## System Components
-![SystemComponents](screenshots/2SystemComponents.jpg "The Robot")
+![SystemComponents](screenshots/2SystemComponents.jpg)
 
 ## Android Application
-![MainActivity](screenshots/3MainActivity.jpg "The Robot")
-![DrawPath](screenshots/4DrawPath.jpg "The Robot")
+![MainActivity](screenshots/3MainActivity_s.jpg)
+![DrawPath](screenshots/4DrawPath_s.jpg)
