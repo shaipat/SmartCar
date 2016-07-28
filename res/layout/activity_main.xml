@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maor.smartcar.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="143dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
+        tools:layout_constraintBottom_creator="1">
+
+        <TextView
+            android:text="MANUAL CONTROL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvManualControl"
+            android:layout_marginLeft="10dp"
+            android:textColor="?attr/colorAccent"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal|bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:background="#ffffff"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="3dp">
+
+            <ImageButton
+                android:src="@drawable/arrow_up_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driveRight_imgBtn"
+                android:background="@android:color/white"
+                android:adjustViewBounds="true"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/driveForward_imgBtn" />
+
+            <ImageButton
+                android:src="@drawable/arrow_down_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reverseRight_imgBtn"
+                android:adjustViewBounds="true"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/white"
+                android:layout_below="@+id/turnRight_imgBtn"
+                android:layout_toEndOf="@+id/driveBackward_imgBtn" />
+
+            <ImageButton
+                android:src="@drawable/arrow_down_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reverseLeft_imgBtn"
+                android:adjustViewBounds="true"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/white"
+                android:layout_below="@+id/turnLeft_imgBtn"
+                android:layout_toStartOf="@+id/driveBackward_imgBtn" />
+
+            <ImageButton
+                android:src="@drawable/arrow_down"
+                android:layout_width="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="55dp"
+                android:scaleType="fitCenter"
+                android:layout_height="wrap_content"
+                android:id="@+id/driveBackward_imgBtn"
+                android:cropToPadding="false"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                tools:layout_editor_absoluteX="160dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:layout_alignTop="@+id/reverseLeft_imgBtn"
+                android:layout_toEndOf="@+id/driveLeft_imgBtn"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:src="@drawable/arrow_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/turnLeft_imgBtn"
+                android:background="@android:drawable/screen_background_light_transparent"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="11dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="55dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="65dp"
+                android:layout_marginEnd="18dp"
+                android:layout_below="@+id/driveLeft_imgBtn"
+                android:layout_toStartOf="@+id/driveForward_imgBtn" />
+
+            <ImageButton
+                android:src="@drawable/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/turnRight_imgBtn"
+                android:background="@android:drawable/screen_background_light_transparent"
+                tools:layout_editor_absoluteX="210dp"
+                tools:layout_editor_absoluteY="11dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="55dp"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/driveRight_imgBtn"
+                android:layout_toEndOf="@+id/driveForward_imgBtn" />
+
+            <ImageButton
+                android:src="@drawable/arrow_up_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/driveLeft_imgBtn"
+                android:background="@android:color/white"
+                android:layout_alignTop="@+id/driveRight_imgBtn"
+                android:layout_toStartOf="@+id/driveForward_imgBtn" />
+
+            <ImageButton
+                android:src="@drawable/arrow_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driveForward_imgBtn"
+                android:cropToPadding="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:adjustViewBounds="true"
+                android:maxWidth="55dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="AUTOMATIC CONTROL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAutoControl"
+                android:layout_marginLeft="10dp"
+                android:textColor="?attr/colorAccent"
+                android:layout_marginBottom="4dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="20dp">
+
+                <TextView
+                    android:text="Cutsom Command:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCustomCommand"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:layout_editor_absoluteY="13dp"
+                    android:paddingRight="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/customCommandeditText"
+                    android:layout_weight="1"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="48dp"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="64dp">
+
+                <Button
+                    android:text="Execute Command"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnExecute"
+                    android:layout_weight="0.30"
+                    android:theme="@style/BtnExecute"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="48dp"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="112dp">
+
+                <Button
+                    android:text="Draw Path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drawPathBtn"
+                    android:layout_weight="1"
+                    android:theme="@style/BtnPath"
+                    tools:layout_editor_absoluteX="12dp"
+                    tools:layout_editor_absoluteY="495dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/snackbarPosition"
+        android:fitsSystemWindows="false">
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>

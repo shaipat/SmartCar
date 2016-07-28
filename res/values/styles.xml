@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+
+    <style name="BtnPath" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlHighlight">#62d7ef</item>
+        <item name="colorButtonNormal">#1565c0</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+
+    <style name="BtnExecute" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlHighlight">#ffe082</item>
+        <item name="colorButtonNormal">#bf360c</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="BtnGo" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlHighlight">#edf54f</item>
+        <item name="colorButtonNormal">#66bb6a</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="BtnReset" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlHighlight">#ffa041</item>
+        <item name="colorButtonNormal">#d32f2f</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

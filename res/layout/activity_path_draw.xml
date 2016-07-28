@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maor.drwaline.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="DRAW A PATH FOR SMART CAR© TO FOLLOW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDrawAPath"
+                android:layout_marginLeft="8dp"
+                android:textColor="?attr/colorAccent"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="417dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvInstructions"
+                android:elevation="4dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:visibility="visible"
+                android:textColor="#bfbfbf"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/distanceMeterTview"
+                android:elevation="4dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:visibility="visible"
+                android:textColor="#0593ff"
+                android:textSize="13sp"
+                tools:text="distance"
+                android:gravity="right"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:paddingRight="10dp" />
+
+            <ImageView
+                android:src="@drawable/ic_mode_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:adjustViewBounds="false"
+                android:layout_weight="0"
+                android:elevation="4dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="416dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:elevation="3dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="0.8"
+                android:id="@+id/linearLayout">
+
+                <ImageView
+                    android:src="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/PathimageView"
+                    android:elevation="4dp"
+                    android:layout_weight="0" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <Button
+                android:text="Go!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/goPathBtn"
+                android:layout_weight="1"
+                android:theme="@style/BtnGo" />
+
+            <Button
+                android:text="Reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resetPathBtn"
+                android:elevation="1dp"
+                android:layout_weight="1"
+                android:theme="@style/BtnReset" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/snackbarPosition">
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</android.support.constraint.ConstraintLayout>

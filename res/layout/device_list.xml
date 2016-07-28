@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:weightSum="1"
+        android:elevation="4dp">
+
+        <TextView android:id="@+id/title_paired_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select Smart Robot Car Device"
+            android:visibility="visible"
+            android:background="?attr/colorPrimary"
+            android:textColor="#fff"
+            android:paddingLeft="8dp"
+            android:textSize="20sp"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:elevation="0dp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.84" />
+
+        <ImageView
+            android:src="@drawable/ic_important_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgGoMain"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:padding="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <ListView android:id="@+id/paired_devices"
+            android:layout_width="match_parent"
+            android:layout_height="347dp"
+            android:stackFromBottom="false"
+            android:layout_weight="0.35" />
+
+        <TextView
+            android:id="@+id/connecting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If no devices are listed please pair your device in Android settings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
