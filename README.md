@@ -15,5 +15,4 @@ The system was created using the ARM mbed Enviroment, using C/C++, and the offic
 ![SystemComponents](screenshots/2SystemComponents.jpg)
 
 ## Android Application
-![MainActivity](screenshots/3MainActivity_s.jpg)
-![DrawPath](screenshots/4DrawPath_s.jpg)
+![Application](screenshots/4App.jpg)
