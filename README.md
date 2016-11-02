@@ -1,5 +1,5 @@
 # SmartCar
-A remote controlled robot vehicle project, using a mbed LPC1678 microcontroller, and Bluetooth communication.  
+A remote controlled robot vehicle project, using a mbed LPC1768 microcontroller, and Bluetooth communication.  
 The system was created using the ARM mbed Enviroment, using C/C++, and the official RTOS library.
 
 ![Robot](screenshots/1Robot.jpg)  
